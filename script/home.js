@@ -95,7 +95,7 @@ function showIssues(issues) {
     const issueCard = document.createElement("div");
 
     // add border top dynamically
-    issueCard.style.borderTop = issue.status === "open" ? "4px solid #00A96E" : "4px solid #A855F7";
+    issueCard.style.borderTop = issue.status === "open" ? "4px solid #06e295" : "4px solid #901ff9";
     issueCard.style.borderRadius = "0.5rem";
 
     // labels dynamically
