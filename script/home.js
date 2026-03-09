@@ -94,11 +94,11 @@ function showIssues(issues) {
 
     const issueCard = document.createElement("div");
 
-    // add border top dynamically
+    // add border top form api data
     issueCard.style.borderTop = issue.status === "open" ? "4px solid #06e295" : "4px solid #901ff9";
     issueCard.style.borderRadius = "0.5rem";
 
-    // labels dynamically
+    // labels added form api with dynamically
     const labelAdd = issue.labels.map(label => `
                 <button class="btn btn-soft btn-secondary rounded-full border">${label.toUpperCase()}</button>
             `).join(" ")
@@ -142,7 +142,7 @@ function showIssues(issues) {
   }
 }
 
-// tab-buttons
+// tab buttons
 const tabButtons = document.querySelectorAll(".issue-tab-btn");
 tabButtons.forEach(btn => {
   btn.addEventListener("click", async () => {
@@ -169,10 +169,10 @@ tabButtons.forEach(btn => {
   })
 })
 
-// search bar make search functionality added
+// search bar make search functionality add
 document.getElementById("btn-search").addEventListener("click", async () => {
-  const input = document.getElementById("input-search");
-  const searchValue = input.value.trim().toLowerCase();
+  const textInput = document.getElementById("input-search");
+  const searchValue = textInput.value.trim().toLowerCase();
 
   const res = await fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues");
   const data = await res.json();
