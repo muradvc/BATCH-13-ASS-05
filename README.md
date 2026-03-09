@@ -23,6 +23,8 @@ filter() – goes through each item, keeps only the ones that match a condition,
     - 4️⃣ What is an arrow function?
 ANS:
 An arrow function is a modern, shorter way to write functions in JavaScript. It makes the code cleaner and easier to read.
+
     - 5️⃣ What are template literals?
+    
 ANS:
 Template literals are a way to write strings in JavaScript using backticks ` instead of quotes. They let you insert variables or expressions easily.Its very powserfull.Mainly,we can write multiline code easily.
